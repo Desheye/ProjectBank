@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="index.css">
+
+
+    <!----- BOOTSTRAP CSS-------->
+    <!----- <link rel="stylesheet" href="/ProjectBank/node_modules/bootstrap/dist/css/bootstrap.min.css"> ------->
+     <!----- BOOTSTRAP CSS-------->
+    <title>Bank Of The SouthWesternLands</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+    <!-- Form stays Hidden Until Triggered From The Explore Section -->
+    <div class="form-grid" id="form-grid">
+        <div class="left-grid"></div>
+        <div class="right-grid">
+            <div class="header">
+                <h4>
+                    Create Your Account <br />
+                    With Your Phone Number
+                </h4>
+            </div>
+            <form method="post" id="form_post" action="/submit">
+                <!-- Include hidden fields for CSRF protection -->
+                <input type="hidden" name="csrf_token" value="">
+
+                <div class="wrapper">
+                    <div class="input-data">
+                        <label for="user_name">User Name</label>
+                        <input type="text" id="user_name" name="user_name" value="">
+                        <div class="underline" id="username_validation"></div>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" value="" min="18" max="99">
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number" value="">
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" value="">
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" value="">
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="">
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" value="">
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" value="">
+                        <div class="underline"></div>
+                    </div>
+                </div>
+
+                <div class="input-data-btn">
+                    <input type="submit" value="Submit" class="submit-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!------------ <script src="/ProjectBank/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="/ProjectBank/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> --------------->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+   <!---- <script src="/js/intlTelInput.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {});
+    </script> ---->
+    <script src="/JS/form.js"></script>
+    <script src="/JS/submit.js"></script>
+</body>

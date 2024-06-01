@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!----- BOOTSTRAP CSS-------->
+        <!-------------- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -------->
+        <!----- BOOTSTRAP CSS-------->
+
+
+    <link rel="stylesheet" href="verify.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/intlTelInput.css">
+    <link rel="stylesheet" href="intlTelInput.min.css">
+    <link rel="stylesheet" href="insurance.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Bank Of The SouthWesternLands</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="navigation">
+            <div class="logo">
+                <h2>Bank Of The <br />SouthWesternLand</h2>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" id="account" href="/form">Open Account</a></li>
+                    <li><a class="dropdown-item" href="/public/insurance.html">Insurance</a></li>
+                    <li><a class="dropdown-item" href="#">Money Market</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cover-frame">
+            <div class="login">
+                <div class="caption">
+                    <h4>Happy Banking.</h4>
+                    <h3>Happy People.</h3>
+                </div>
+                <div class="login_button">
+                    <button id="login_button">Log in to your account</button>
+                </div>
+            </div>
+        </div>
+
+      <!---- Verified stays hidden untill triggered----->
+      <div class="verify">
+        <form id="login">
+          <p>Enter your phone number:</p>
+          <input id="verify_phone" type="tel" name="phone" autocomplete="tel" />
+          <button class="btn" type="s">Verify</button>
+        </form>
+        <!-- <div class="alert alert-info" style="display: none"></div>
+    <div class="alert alert-error" style="display: none"></div> -->
+      </div>
+       <!---- Verified stays hidden untill triggered----->
+
+    </div>
+    <div class="container-grid">
+
+    </div>
+
+    <!-------------- <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -------------->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="/js/intlTelInput.js"></script>
+
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {});
+    </script>
+    <script src="#"></script>
+</body>

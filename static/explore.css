@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Strait;
+    src: url(/Fontz/Strait-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.form-grid {
+    width: 900px;
+    height: 550px;
+    border-radius: .5rem;
+    box-shadow: .2rem .3rem rgb(55, 40, 3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: flex;
+    background-color: rgba(255, 215, 0, 0.5);
+    /* Goldenrod color with 50% opacity */
+    visibility: hidde;
+}
+
+.form-grid .left-grid {
+    background: url(/img/africanTrader.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    width: 30%;
+    height: 95%;
+    margin: 1rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.form-grid .right-grid {
+    width: 70%;
+}
+
+.form-grid,
+.right-grid .header h4 {
+    font-family: Strait;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.form-grid .right-grid .form {
+    margin-top: .1rem;
+    font-family: Strait;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: none;
+    outline: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right-grid .wrapper .input-data {
+    height: 40px;
+    width: 90%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: strait;
+    border-bottom: 2px solid red;
+    transition: border-bottom 0.3s;
+    position: relative;
+    background-color: aliceblue;
+    padding: 1rem;
+  }
+  
+  .input-data input:valid {
+    border-bottom: 2px solid green;
+  }
+  
+  .input-data input:invalid {
+    border-bottom: 2px solid red;
+  }
+
+.right-grid .wrapper .input-data label{
+    position: absolute;
+    top: -1.8rem;
+    left: 4px;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: .3rem;
+    padding-left: .2rem;
+    background-color: rgba(255, 215, 0, 0.5);
+    font-family: Strait;
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+.right-grid .wrapper .input-data .underline{
+    color: green;
+    width: 100%;
+    height: 5rem;
+}
+
+.right-grid .wrapper .input-data input:focus~label,
+.right-grid .wrapper .input-data input:valid~label {
+    transform: translateY(1.5rem);
+    font-size: 15px;
+    color: black;
+    padding: 0px 0.5rem;
+    background-color: orangered;
+}
+
+.input-data-btn{
+    width: 100%;
+    height: 40px;
+}
+
+.input-data-btn .submit-btn{
+    width: 50%;
+    height: fit-content;
+    border: none;
+    border-radius: .4rem;
+    background-color: rgb(216, 14, 14);
+    color: wheat;
+    padding: .9rem;
+    font-size: 1.2rem;
+}
+.input-data-btn .submit-btn:hover{
+    background-color: orangered;
+    color: black;
+    font-weight: bold;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}

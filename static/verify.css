@@ -1,0 +1,52 @@
+@font-face {
+    font-family: NovaSquare;
+    src: url(../Fontz/NovaSquare-Regular.woff2);
+}
+.verify{
+    width: 650px;
+    height: 100px;
+    border-radius:.5rem;
+    box-shadow: .2rem .3rem rgb(55, 40, 3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    background-color: rgba(149, 142, 144, 0.5); /* 50% opacity */
+    visibility: hidden;
+}
+.verify form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 1rem auto;
+}
+.verify form p{
+    font-family: NovaSquare;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: fit-content;
+    padding: .5rem;
+    margin-top: .7rem;
+}
+.verify form #phone{
+    width: 200px;
+    padding: 1rem;
+    padding-left: 3rem; /* Adjust as needed */
+    border-radius: .5rem;
+    outline: none;
+    border: transparent;
+    background-color: pink;
+}
+.verify form .btn{
+    width: 100px;
+    padding: .5rem;
+    background-color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+.verify form .btn:hover{
+    background-color: orangered;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
